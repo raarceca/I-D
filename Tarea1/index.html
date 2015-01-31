@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>A&A Solutions HR</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <header>
+        <img src="img/AALogo.png" width="10%" height="10%">
+    </header>
+    <body>
+        <h1>A&amp;A Solutions</h1>
+        <p>El proposito del siguiente formulario es registrar los datos personales asociados del 
+            departamento de recursos humanos de su empresa.  Se le solicitaran los 
+            datos de identificación de su empresa.</p>
+        <form id="loginForm" method="GET" action="index.html">
+            <table class="loginTable">
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" name="nombre" id="nombre" maxlength="16"></td>		
+                </tr>
+                <tr>
+                    <td><label for="apellidos">Apellidos</label></td>
+                    <td><input type="text" name="apellidos" id="apellidos" maxlength="25"></td>		
+                </tr>
+                <tr>
+                    <td><label for="email">Correo</label></td>
+                    <td><input type="email" name="email" id="email"></td>		
+                </tr>
+                <tr>
+                    <td><label for="telefono">Telefono</label></td>
+                    <td><input type="text" name="telefono" id="telefono" maxlength="16"></td>		
+                </tr> 
+                <tr>
+                    <td><label for="direccion">Direccion de la empresa</label></td>
+                    <td><textarea name="direccion" id="direccion" cols="30"></textarea></td>
+                </tr> 
+                <tr>
+                    <td> <button type="submit" id="enviarDatos" name="enviarDatos">Registrar</button></td>
+                </tr>
+            </table>    
+        </form>
+    </body>
+</html>
+

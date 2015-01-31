@@ -1,0 +1,12 @@
+/*
+    Document   : Tarea 1/css/style．css
+    Created on : 2015-01-31 09:14 PM
+    Author     : raarceca
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+header > img {
+    float: left;
+}
