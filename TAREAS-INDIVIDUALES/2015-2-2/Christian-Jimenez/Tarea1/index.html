@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">                
+        <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+        <title>Recursos Humanos</title>
+        <script type="application/javascript" src="scripts/scripts.js"></script>
+    </head>
+    <header>
+        <img src="img/plumchoice.bmp" width="15%" height="15%">
+    </header>
+    <body> 
+        <h1>Recursos Humanos</h1>
+        <p>A continuación ingrese los datos que se le solicitan.</p>
+        <form id="loginForm" method="get" action="index.html">
+        <div id="titulo">Lista desordenada</div>    
+        <ul class="eliminarVineta">
+            <li>
+                <input type="radio" name="genero" value="masculino" checked>Masculino
+                <br><input type="radio" name="genero" value="femenino">Femenino                
+            </li>            
+            <li>
+                <br><label for="nombre">Nombre:</label>
+                <br/><input type="text" name="nombre" id="nombre" value="" maxlength="20">
+            </li>
+            <li>
+                <br><label for="nombre">Apellidos:</label>
+                <br/><input type="text" name="nombre" id="nombre" value="" maxlength="40">
+            </li>
+            <li>
+                <br><label for="telefono">Teléfono:</label >
+                <br/><input type="tel" name="telefono" id="telefono">
+            </li>
+            <li>
+                <br><label for="correo">Correo:</label>
+                <br/><input type="email" name="correo" id="correo">
+            <li>                
+                <br><button type="submit" id="enviar" name="enviar">Enviar</button>
+            </li>       
+            <br><h3>Corporate Headquarters</h3>
+            <img src="img/map.jpg" width="15%" height="15%" style="float: left; margin-right:10px; margin-botton:5px">            
+            <p>900 Chelmsford Street<br />
+            Lowell, MA 01851-8100<br />
+            (P) 866-811-3321<br />
+            (F) 781-998-0264</p>            
+        </ul>
+        </form>        
+    </body>
+</html>
