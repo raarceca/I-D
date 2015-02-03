@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <!--Se le asigna un lenguaje al sitio web-->
+    <head lang="en">
+        <!--Se le agrega un titulo a l pagina-->
+        <title>Checkbox</title>
+    </head>
+    <body>
+        <!--Se inserta un formulario para obtener datos mediante el metodo "GET" que se llama "Integrantes"-->
+        <form method="GET" action="#" name="Integrantes">
+            <!---Se le inserta un titulo dentro del formulario-->
+            <h1>Checkbox use</h1>
+            <!--Se agregan las diferentes opciones de "checkbox" dentro del formulario-->
+            <input type="checkbox" name="integrantes" value="christian">Christian Jimenez<br>
+            <input type="checkbox" name="integrantes" value="esteban">Esteban Esquivel<br>
+            <input type="checkbox" name="integrantes" value="ricardo">Ricardo Arce<br>
+            <input type="checkbox" name="integrantes" value="randall">Randall Saenz<br>
+<!---Para organizar un grupo de checkboxes se deben nombrar los objetos del grupo con el mismo nombre y seguidos de ‘[]’ . Esto acomoda cada valor en un arreglo. -->
+ <form action="checkbox-form.php" method="GET">
+<h1>Checkbox Group</h1>
+
+ <input type="checkbox" name="chk_group[]" value="Jimenez" />Value 1<br />
+<input type="checkbox" name="chk_group[]" value="Esquivel" />Value 2<br />
+<input type="checkbox" name="chk_group[]" value="Arce" />Value 3<br />
+<input type="checkbox" name="chk_group[]" value="Saenz" />Value 4<br />
+
+<input type="submit" name="formSubmit" value="Submit" />
+ 
+</form>
+            <!---Se inserta un boton de tipo "submit" para enviar los datos-->
+            <button type="submit" name="enviarDatos" id="enviarDatos">Enviar Datos</button>
+        <!---Se cierra el tag de formulario-->
+        </form>
+
+
+    </body>
+</html>
