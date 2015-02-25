@@ -23,7 +23,37 @@ class ConectorDatos {
     /**
      * @param $idModelo
      */
+    static function buscarProductoPorNombreModelo($nombreModelo) {
+        $aTel=ConectorDatos::buscarProductos();
+        $nTResultado="";
+        foreach($aTel as $sMarca=>$aProductosMarca) {
+            foreach($aProductosMarca as $sIdProducto=>$aDatosProducto) {
+                if($nombreModelo===$aDatosProducto['modelo']){
+                    $aDatosProducto['id']=$sIdProducto;
+                    $aDatosProducto['marca']=$sMarca;
+                    return $aDatosProducto;
+
+
+                }
+
+            }
+        }
+    }
     static function buscarProductoEspecifico($idModelo) {
-        //TODO - EJERCICIO DE CLASE
+
+        $aProductos = self::buscarProductos();
+        $sMarca = '';
+
+        foreach($aProductos as $sMarcaProducto => $aDatosProductos) {
+            $sMarca = $sMarcaProducto;
+            foreach($aDatosProductos as $sIdProucto => $aDatoProducto) {
+                if($sIdProucto === $idModelo) {
+                    $aDatoProducto['marca'] = $sMarca;
+                    $aDatoProducto['id'] = $idModelo;
+                    return $aDatoProducto;
+                }
+            }
+        }
+
     }
 }

@@ -9,6 +9,7 @@ class Carrito {
     }
 
     function __destruct() {
+        //$this->eliminarDeCarrito();
 
     }
 
@@ -26,6 +27,46 @@ class Carrito {
     }
 
     function eliminarDeCarrito() {
+        $_SESSION['carrito']=array();
+        header("Location: $this->redirectUrl");
+
+    }
+
+    function eliminarProducto($idProducto) {
+        $aTempCarrito = $_SESSION['carrito'];
+        unset($aTempCarrito[$idProducto]);
+
+        $_SESSION['carrito'] = $aTempCarrito;
+        header("Location: $this->redirectUrl");
+    }
+
+    function modificarProducto($idProductoModificar,$icantidadNueva) {
+        $aTempCarrito = $_SESSION['carrito'];
+
+        $aTempCarrito[$idProductoModificar]=$icantidadNueva;
+
+        $_SESSION['carrito'] = $aTempCarrito;
+        header("Location: $this->redirectUrl");
+    }
+
+    /**
+     * Retorna itemes de carro en el SESSION
+     * @return array Itemes carro
+     *
+     */
+    function listadoItemesCarrito() {
+        $aCarrito = $_SESSION['carrito'];
+        // id, modelo, marca, precio
+        $aItemesCarro = array();
+
+        //construye itemes de carro
+        foreach($aCarrito as $idModeloTelefono => $sCantidadModelo) {
+            $aProducto = ConectorDatos::buscarProductoEspecifico($idModeloTelefono);
+            $aProducto['cantidad'] = $sCantidadModelo;
+            $aItemesCarro[] = $aProducto;
+        }
+
+        return $aItemesCarro;
 
     }
 
