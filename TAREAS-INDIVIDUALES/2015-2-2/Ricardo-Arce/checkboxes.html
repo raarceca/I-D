@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <!--Se le asigna un lenguaje al sitio web-->
+    <head lang="en">
+        <!--Se le agrega un titulo a l pagina-->
+        <title>Checkbox</title>
+    </head>
+    <body>
+        <!---Se le inserta un titulo dentro del formulario-->
+        <h1>Checkbox use</h1>
+        <!---Se agrega una linea divisoria del formulario-->
+        <fieldset>
+            <!---Se agrega un titulo a la linea divisoria-->
+            <legend>Selecciones los participantes presentes:</legend>
+            <!--Se inserta un formulario para obtener datos mediante el metodo "GET" que se llama "Integrantes"-->
+            <form method="GET" action="#" name="Integrantes">                
+                <!--Se agregan las diferentes opciones de "checkbox" dentro del formulario-->
+                <input type="checkbox" name="integrantes" value="christian">Christian Jimenez<br>
+                <input type="checkbox" name="integrantes" value="esteban">Esteban Esquivel<br>
+                <input type="checkbox" name="integrantes" value="ricardo">Ricardo Arce<br>
+                <input type="checkbox" name="integrantes" value="randall">Randall Saenz<br>
+                <!---Se inserta un boton de tipo "submit" para enviar los datos-->
+                <button type="submit" name="enviarDatos" id="enviarDatos">Enviar Datos</button>
+            <!---Se cierra el tag de formulario-->            
+            </form>   
+        </fieldset>
+    </body>
+</html>
