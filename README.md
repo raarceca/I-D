@@ -1,3 +1,7 @@
 # BITIC-PROYECTO-WEB-1-2015-1
-Tareas I-D
+
+
+Grupo I-D
+
+Código fuente del curso Proyecto Web 1
 
