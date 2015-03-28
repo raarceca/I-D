@@ -1,1 +1,1 @@
-index.php
+<div><?php include('Proyecto/Sitio/menu.php'); ?></div>
