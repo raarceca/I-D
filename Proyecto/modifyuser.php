@@ -91,7 +91,7 @@ where p.cedula="'.$_POST['cedula'].'"';
                 <td><input type="email" name="email" <?php if($resultadoBusqueda){ echo 'value="'.$email.'""'; } ?> ></td>
             </tr>
             <tr>
-                <td>Telefono:</td>
+                <td>Fecha de Nacimiento:</td>
                 <td><input type="date" name="dob" <?php if($resultadoBusqueda){ echo 'value="'.$fechaNacimiento.'""'; } ?> ></td>
             </tr>
             <tr>
