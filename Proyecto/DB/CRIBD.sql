@@ -140,6 +140,7 @@ CREATE TABLE IF NOT EXISTS `CentralRevelados`.`respaldo` (
   `respaldo_estado_id` TINYINT NOT NULL,
   `respaldo_tipo_id` TINYINT NOT NULL,
   `sistema_sistema_id` INT NOT NULL,
+  `respaldo_url` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`respaldo_id`, `respaldo_estado_id`, `respaldo_tipo_id`, `sistema_sistema_id`),
   INDEX `fk_respaldo_respaldo_estado1_idx` (`respaldo_estado_id` ASC),
   INDEX `fk_respaldo_respaldo_tipo1_idx` (`respaldo_tipo_id` ASC),
