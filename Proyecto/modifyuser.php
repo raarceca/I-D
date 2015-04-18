@@ -35,9 +35,9 @@ where p.cedula="'.$_POST['cedula'].'"';
     } else if ($_POST['validacion']=='actualizar'){
         if ($_POST['clave']= $_POST['confirmacion']){
             $updateUsuario = 'UPDATE usuario SET  clave="'. $_POST['clave'] .'" WHERE usuario_id="'.$_POST['usuario'].'"';
-            echo $updateUsuario;
+            //echo $updateUsuario;
             $updatePersona = 'UPDATE persona SET nombre="'. $_POST['nombre'] .'", apellido1="'. $_POST['apellido1'] .'", apellido2="'. $_POST['apellido2'] .'", dob="'. $_POST['dob'] .'", email="'. $_POST['email'] .'" WHERE cedula="'.$_SESSION['cedulaActualizar'].'"';
-            echo $updatePersona;
+            //echo $updatePersona;
             ConectorBD::executeQuery($updateUsuario);
             ConectorBD::executeQuery($updatePersona);
             echo '<script>alert("Usuario actualizado satisfactoriamente");</script>';
@@ -51,7 +51,7 @@ where p.cedula="'.$_POST['cedula'].'"';
 <html>
 <head>
     <title>Modify User</title>
-    <link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>
+    <!--<link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>-->
 </head>
 <body>
 <header>
@@ -70,7 +70,7 @@ where p.cedula="'.$_POST['cedula'].'"';
             </tr>
         </table>
     </form>
-
+<br><br>
     <form action="#" method="POST" name="actualizar">
         <input type="hidden" name="validacion" value="actualizar">
         <table>

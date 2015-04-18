@@ -16,8 +16,8 @@ where u.usuario_id="'.$_POST['username'] . '" and clave="'.$_POST['password'].'"
     $arreglo = ConectorBD::selectQuery($query);
 
     foreach ($arreglo as $row){
-        if ($row['usuario_id'] = $_POST['username']){ //Verifica que el usuario ingresado y en el arreglo sea iguales
-            if ($row['clave'] = $_POST['password']){ //Verifica que el password ingresado y en el arreglo sea iguales
+        if ($row['usuario_id'] === $_POST['username']){ //Verifica que el usuario ingresado y en el arreglo sea iguales
+            if ($row['clave'] === $_POST['password']){ //Verifica que el password ingresado y en el arreglo sea iguales
                 /**
                  * Se guarda la informacion del usuario en variables de session para mantenerlas durante toda la session
                  */
@@ -37,26 +37,50 @@ where u.usuario_id="'.$_POST['username'] . '" and clave="'.$_POST['password'].'"
     }
 }
 ?>
-
+<style>
+    body{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    section{
+        height: 75%;
+    }
+</style>
 <html>
 <head>
     <title>Login</title>
-    <link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>
+    <!--<link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>-->
 </head>
 <body>
     <header>
-        <img src="img/Logo.png" width="7%" height="15%""/>
+        <center><img src="img/Logo.png" width="20%" height="30%""/></center>
     </header>
 
     <section>
-        <h1> Formulario</h1>
-        <form method='POST' action='#'>
-            <label for="username">Username: </label> <input type="text" name="username"><br>
-            <label for="password">Password: </label> <input type="password" name="password"><br>
-            <?php if ($bHayError){ echo $sMensajeError . "<br>"; } ?>
-            <button type="submit">Login</button>
-        </form>
+        <center>
+            <h1> Formulario</h1>
+            <form method='POST' action='#'>
+                <table>
+                    <tr>
+                        <td><label for="username">Usuario: </label></td>
+                        <td><input type="text" name="username"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Clave: </label></td>
+                        <td><input type="password" name="password"><br></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Entrar</button></td>
+                    </tr>
+                    <tr>
+                        <td><?php if ($bHayError){ echo $sMensajeError . "<br>"; } ?></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
     </section>
+
 
     <footer>
         <center>Copyright 2015. Developed by I&D</center>
