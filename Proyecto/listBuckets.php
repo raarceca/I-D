@@ -11,8 +11,8 @@ $bucket = 'CentralReveladosServer';
 // Instantiate the client.
 $s3 = S3Client::factory(
 array('credentials' => array(
-    'key'    => 'AKIAJNALDIJ36AKOEKZQ',
-    'secret' => '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',
+    'key'    => '',
+    'secret' => '',
 
 )));
 
