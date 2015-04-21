@@ -4,8 +4,8 @@ use Aws\S3\S3Client;
 require_once('PATH_TO_API/aws-autoloader.php');
 
 $s3 = S3Client::factory(array(
-    'key'=> 'AKIAIIKT6R6FDCYR4BEA',
-    'secret'=>'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',
+    'key'=> '',
+    'secret'=>'',
     'region'=>'us-west-2'
 ));
 
