@@ -23,7 +23,7 @@ if ($_POST){
 <html>
     <head>
         <title>Add User</title>
-        <link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>
+        <!--<link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>-->
     </head>
     <body>
         <header>
