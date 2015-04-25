@@ -3,12 +3,12 @@
 <html>
 <head>
 	<title>Ayuda</title>
-	<link rel="stylesheet" type="text/css" href="public/css/ayuda_estilos.css"/>
+	<link rel="stylesheet" type="text/css" href="Sitio/public/css/ayuda_estilos.css"/>
 </head>
 
 <body>
 	<div id="header">
-		<h1><img src="public/images/logo.png"/></h1>
+		<h1><img src="Sitio/public/img/logo.png"/></h1>
 	</div>
 
 	<div id="elementos">
@@ -24,27 +24,27 @@
 		</ul>
 
 	<div class="ayuda" id="agregar_usuario">
-		<h3><img src="public/images/question_mark.png" alt=""/>Agregar usuario</h3>
+		<h3><img src="public/img/question_mark.png" alt=""/>Agregar usuario</h3>
 		<p>Se debe de llenar cada uno de los campos del formulario ya que todos son requeridos.</p>
 	</div>
 
 	<div class="ayuda" id="modificar_usuario">
-		<h3><img src="public/images/question_mark.png" alt=""/>Modificar usuario</h3>
+		<h3><img src="public/img/question_mark.png" alt=""/>Modificar usuario</h3>
 		<p>Se debe de ingresar el n&uacutemero de c&eacutedula del usuario a modificar para realizar la b&uacutesqueda. Seguidamente aparecer&aacuten los datos del usuario y ser&aacute posible modificarlos simplemente posicion&aacutendose sobre el campo y realizando el cambio.</p>
 	</div>
 
 	<div class="ayuda" id="eliminar_usuario">
-		<h3><img src="public/images/question_mark.png" alt=""/>Eliminar usuario</h3>
+		<h3><img src="public/img/question_mark.png" alt=""/>Eliminar usuario</h3>
 		<p>Se debe de ingresar el n&uacutemero de c&eacutedula del usuario a eliminar para realizar la b&uacutesqueda. Una vez que se encuentre la coincidencia el usuario ser&aacute eliminado.</p>
 	</div>
 
 	<div class="ayuda" id="listar_usuarios">
-		<h3><img src="public/images/question_mark.png" alt=""/>Listar usuarios</h3>
+		<h3><img src="public/img/question_mark.png" alt=""/>Listar usuarios</h3>
 		<p>Permite listar todos los usuarios en el Sistema presentando un usuario por l&iacutenea y sus respectivos datos en estilo columna siguiendo la forma:</p>
-		<pre>Nombre | Primer_Apellido | Segundo_Apellido | Email | Fecha de Nacimiento  | Nombre de Usuario</pre>
+		<p>Nombre | Primer_Apellido | Segundo_Apellido | Email | Fecha de Nacimiento  | Nombre de Usuario</p>
 
 	<div class="ayuda" id="Configuracion_MV">
-		<h3><img src="public/images/question_mark.png" alt=""/>Configuraci&oacuten de M&aacutequina Virtual</h3>
+		<h3><img src="public/img/question_mark.png" alt=""/>Configuraci&oacuten de M&aacutequina Virtual</h3>
 		<p>En Construcci&oacuten</p>
 	</div>
 
@@ -54,7 +54,7 @@
 	</div>
 
 	<div class="ayuda" id="gestion_respaldos">
-		<h3><img src="public/images/question_mark.png" alt=""/>Gesti&oacuten de Respaldos</h3>
+		<h3><img src="public/img/question_mark.png" alt=""/>Gesti&oacuten de Respaldos</h3>
 		<p>En Construcci&oacuten</p>
 	</div>
 

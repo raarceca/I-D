@@ -85,3 +85,12 @@ address {
 	font-style: normal;
 	color: #808080;	
 }
+
+.horizontal_menu {display:block;padding:0;margin:0;height:42px;position:relative;text-align:center;}
+.horizontal_menu ul {padding:0;margin:0;border:1px solid #AAAAAA;background-color:#006666;}
+.horizontal_menu ul li {display:inline-block;position:relative;background-color:#006666;}
+.horizontal_menu ul li a {display:block;font-family:sans-serif;color:#f2b580;text-decoration:none;padding:10px 25px;}
+.horizontal_menu ul li a:hover {color:#f2b580;background-color:#207979;}
+.menu-background {position:absolute;top:0;right:0;font-size:8px;color:#cccccc;}
+.menu-background a {color:#cccccc;text-decoration:none;font-weight:normal;}
+.menu-background a:hover {color:#cccccc;text-decoration:none;font-weight:normal;}
