@@ -45,20 +45,21 @@ where u.usuario_id="'.$_POST['username'] . '" and clave="'.$_POST['password'].'"
     section{
         height: 75%;
     }
+    
 </style>
 <html>
 <head>
     <title>Login</title>
-    <!--<link type="text/css"; rel="stylesheet"; href="stylesheet.css"/>-->
+    <link rel="stylesheet" type="text/css" href="Sitio/public/css/ayuda_estilos.css"/>
 </head>
 <body>
     <header>
-        <center><img src="img/Logo.png" width="20%" height="30%""/></center>
+        <br/><h1><img class=centered src="Sitio/public/img/logo.png"/></h1>
     </header>
 
     <section>
         <center>
-            <h1> Formulario</h1>
+            <h2><br/>Ingreso al Sistema de Informaci&oacuten</h2>
             <form method='POST' action='#'>
                 <table>
                     <tr>
@@ -71,7 +72,7 @@ where u.usuario_id="'.$_POST['username'] . '" and clave="'.$_POST['password'].'"
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button type="submit">Entrar</button></td>
+                        <td><button class=centered type="submit">Entrar</button></td>
                     </tr>
                     <tr>
                         <td><?php if ($bHayError){ echo $sMensajeError . "<br>"; } ?></td>
@@ -82,9 +83,10 @@ where u.usuario_id="'.$_POST['username'] . '" and clave="'.$_POST['password'].'"
     </section>
 
 
-    <footer>
-        <center>Copyright 2015. Developed by I&D</center>
-    </footer>
+    <address>
+        Copyright &copy; 2015 
+        Infrastructure & Development.
+    </address>
 
 </body>
 </html>
