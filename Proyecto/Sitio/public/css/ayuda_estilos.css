@@ -1,5 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
+body {
+	background-color: #E46B00;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#E46B00, endColorstr=#006666);
+	background-image: -moz-linear-gradient(top, #E46B00 0%, #006666 100%);
+	background-image: -webkit-linear-gradient(top, #E46B00 0%, #006666 100%);
+	background-image: -ms-linear-gradient(top, #E46B00 0%, #006666 100%);
+	background-image: linear-gradient(top, #E46B00 0%, #006666 100%);
+	background-image: -o-linear-gradient(top, #E46B00 0%, #006666 100%);
+	background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#E46B00), color-stop(100%,#006666));
+}
+
 #header {
 	border-bottom: 1px solid #c0d8c0;
 	margin-bottom: 2em;	
@@ -34,17 +45,17 @@ li {
 	font-size: small;	
 }
 
-pre {	
-	border: 1px solid #c0d8c0;
-	padding: 1em;
-	background-color: #f0f0f0;
-}
-
 h1 img {
 	height: 1em;
 	width: 1em;	
 	vertical-align: text-bottom;	
 	margin-right: 0.25em;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .ayuda {
