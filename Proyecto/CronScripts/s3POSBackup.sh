@@ -1,4 +1,4 @@
-DATABASES="CentralRevelados"
+DATABASES="Unicenta"
 SYSTEM="POS1"
  
  ## Syntax databasename as per above _USER and _PW
